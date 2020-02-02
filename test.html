@@ -3,62 +3,133 @@
 	<head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Hello Bulma!</title>
+	<title>ARPCV</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
   <script defer src="https://friconix.com/cdn/friconix.js"> </script> 
 </head>
 <body>
-	<section class="hero is-primary">
-		<div class=hero-body>
-			<div class="container">
-				<h1 class="title">
-					ARPCV
-				</h1>
-				<p class="subtitle">
-					<strong>Association pour le Reboisement du Cengle Sainte Victoire</strong>
-				</p>
-			</div>
-		</div>
-  </section>
-  <div class="columns">
-    <div class="column">
-      <div class="card-content">
-        <h2 class="title">Choose</h2>
-        <h3 class="subtitle">Easy!</h3>
-        <footer class="card-footer">
-          <div class="card-footer-item">
-            <a href="#" class="button is-info">
-              <i class="fi-snsuxm-question-mark"></i>
-            </a>
-          </div>
-        </footer>
+  <nav class="navbar has-shadow is-primary">
+  <div class="navbar-brand">
+    <a class="navbar-item">
+      <img src="images/logo.jpg">
+      &nbsp;&nbsp;ARPCV
+    </a>
+    <div class="navbar-burger burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div class="navbar-menu">
+    <div class="navbar-start">
+      <div class="navbar-item">
+        <div>
+          <small>L'Association pour le Reboisement et la Protection du Cengle Sainte Victoire</small>
+        </div>
       </div>
     </div>
-    <div class="column">
-      <div class="card-content">
-        <h2 class="title">Choose</h2>
-        <h3 class="subtitle">Easy!</h3>
-        <footer class="card-footer">
-          <div class="card-footer-item">
-            <a href="#" class="button">
-              <i class="fi-nnsuxm-question-mark fi-flip-v" style="color: red;"></i>
-            </a>
-          </div>
-        </footer>
-      </div>
-    </div><div class="column">
-      <div class="card-content">
-        <h2 class="title">Choose</h2>
-        <h3 class="subtitle">Easy!</h3>
-        <footer class="card-footer">
-          <div class="card-footer-item">
-            <a href="#" class="button">
-              <i class="fi-snsuxm-question-mark"></i>
-            </a>
-          </div>
-        </footer>
+
+    <div class="navbar-end">
+      <div class="navbar-item has-dropdown is-hoverable">
+        <div class="navbar-link">
+          Visiteur
+        </div>
+        <div class="navbar-dropdown is-right">
+          <a href="#" class="navbar-item">
+            <div>
+              <span class="icon is-small">
+                <i class="fi-xtluxl-user-thin"></i>
+              </span>
+              &nbsp;Devenir membre
+            </div>
+          </a>
+          <a  href="#" class="navbar-item">
+            <div>
+              <span class="icon is-small">
+                <i class="fi-ctlxxm-tree"></i>
+              </span>
+              &nbsp;Sponsoriser un arbre
+            </div>
+          </a>
+          <a  href="#" class="navbar-item">
+            <div>
+              <span class="icon is-small">
+                <i class="fi-cwluxl-euro-symbol"></i>
+              </span>
+              &nbsp;Faire une donation
+            </div>
+          </a>
+          <a  href="#" class="navbar-item">
+            <div>
+              <span class="icon is-small">
+                <i class="fi-ctsxxm-sign-in"></i>
+              </span>
+              &nbsp;S'identifier
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </div>
+</nav>
+
+<section class="section">
+  <div class="columns">
+    <div class="column is-4-tablet is-3-desktop is-2-widescreen">
+      <nav class="menu">
+        <p class="menu-label">
+          Menu
+        </p>
+        <ul class="menu-list">
+          <li>
+            <a href="dashboard.html">
+              <span class="icon">
+                <i class="fi-xnsuxl-house"></i>
+              </span>
+              L'Association
+              </a>
+          </li>
+          <li>
+            <a class="is-active" href="books.html">
+              <span class="icon">
+                <i class="fi-xnsuxl-tree"></i>
+              </span>
+              Reboisements
+            </a>
+          </li>
+          <li>
+            <a href="customers.html">
+              <span class="icon">
+                <i class="fi-xnluxl-address-card"></i>
+              </span>
+              Education & Pédagogie
+            </a>
+          </li>
+          <li>
+            <a href="orders.html">
+              <span class="icon">
+                <i class="fi-xnsuxl-team-solid"></i>
+              </span>
+              Partenaires
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+</section>
+<script>
+  var burger = document.querySelector('.burger');
+  var menu = document.querySelector('.navbar-menu')
+  if (burger !== null) {
+      burger.addEventListener('click', function() {
+          burger.classList.toggle('is-active');
+          menu.classList.toggle('is-active');
+  
+      });
+  }
+</script>
 </body>
 </html>
