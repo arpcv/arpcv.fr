@@ -425,6 +425,7 @@ body {
 }
 
 .news-paragraph-head {
+    margin-top: 1em;
     grid-column: 1 / -1;
     grid-row: 2 / 3;
     font-size: 2rem;
