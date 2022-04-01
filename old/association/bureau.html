@@ -1,79 +1,211 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-   <meta name="Author" content="ARPCV">
-   <meta name="Description" content="bureau de l'association">
-   <title>bureau</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  	<link rel="shortcut icon" type="image/png" href="../../images/logo.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../page.css">
+   <title>Composition du bureau</title>
 </head>
 <body>
-L'association est dirigée par un conseil
-d'administration de 12 membres élus lors des assemblées générales annuelles
-et de façon  plus régulière par son bureau:
+  <!-- modal box -->
+  <input type="checkbox" id="show-hide-forms" hidden>
+  <div class="forms-wrapper">
+      <label for="show-hide-forms" class="x-btn">&#10005;</label>
+      <input type="checkbox" id="show-form" hidden>
+      <div class="show-btns-wrapper">
+          <label for="show-form" class="show-form-btn show-signup-form">S'inscrire</label>
+          <label for="show-form" class="show-form-btn show-login-form">S'identifier</label>
+      </div>
 
-<h3>Composition du bureau de l'association:</h3>
+      <form class="signup-form">
+          <h3 class="form-heading">S'enregistrer</h3>
+          <div class="fullname-inputs-wrapper">
+              <input type="text" placeholder="Prénom">
+              <input type="text" placeholder="Nom de famille">
+          </div>
+          <input type="text" class="form-input" placeholder="Nom">
+          <input type="email" class="form-input" placeholder="Adresse E-Mail">
+          <input type="password" class="form-input" placeholder="Mot de passe">
+          <input type="submit" value="SIGN UP" class="form-btn">
+      </form>
 
-<ul>
-<li>
-<u>Président</u>: Jean-Pierre MATTALIA
-<br>
-Professeur d'économie - Retraité
-<br>
-jpmattalia@aol.com 
-</li>
-<li>
-<p><u>Vice-président</u>: Alain JAFFIER
-<br>
-Architecte - Retraité 
-</li>
-<li>
-<p><u>Trésorier</u>: Jean-Yves RAYNAUD
-<br>
-Notaire - Retraité 
-</li>
-<li>
-<p><u>Secrétaire:</u> MarinaFAURE
-<br>
-Secrétaire - Retraitée
-<br>
-marina.faure@yahoo.fr  - Tél: 04 42 23 18 54
-</li>
-</ul>
+      <form class="login-form">
+          <h3 class="form-heading">S'authentifier</h3>
+          <input type="email" class="form-input" placeholder="Adress e-mail">
+          <input type="password" class="form-input" placeholder="Mot de passe">
+          <input type="submit" value="LOG IN" class="form-btn">
+      </form>
+  </div>
+  <!-- end of modal box -->
 
-<h4>Consultants:</h4>
+  <div class="container">
+      <!-- navbar -->
+      <div class="assoc-logo">
+          <img src="../../images/logo.jpg " width="82" height="82">
+      </div>
+      <div class="assoc-header">
+          <h1>Association pour le Reboisement et la Protection du Cengle Sainte-Victoire à Aix-en-Provence, France</h1>
+          <h1>ARPCV</h1>
+      </div>
+      <div class="assoc-contact">
+          <h3>
+              Informations au 04 42 23 18 54
+          </h3>
+      </div>
 
-<ul>
-  <li>
-<u>Conseiller technique</u> : Morgan Jacquinot
-<br>
-Renseignements sur les reboisements, le choix des espèces d'arbres, projets d'implantation
-<br>
-morgan@hotmail.com 
-<br>
-  </li>
-<br>
-  <li>
-<u>Conseiller technique</u> : Alain Jaffier
-<br>
-Conseils en botanique méditerranéenne
-<br>
-jaffier.architectures@orange.fr 
-<br>
-  </li>
-  <br>
-  <li>
-<u>Conseiller reboisement</u> : Michel Thinon
-<br>
-Conseiller technique spécialiste, conférencier sur la forêt méditerranéenne 
-<br>
-michel.thinon@orange.fr 
-  </li>
-</ul>
+      <nav class="first-nav">
+          <ul class="first-nav-list">
+              <li class="first-nav-item">
+                  <a href="#" class="first-nav-link"><label for="show-hide-forms"><i class="fas fa-heart"></i>Devenir Membre</label></a>
+              </li>
+              <li class="first-nav-item">
+          </ul>
+      </nav>
 
-<br> 
-<br> 
-<div align=right><a href="/index.html">
-  <img src="../images/top.gif" width="37" height="37"></a></div>
+      <nav class="second-nav">
+          <ul class="second-nav-list">
+              <li class="second-nav-item">
+                  <a href="#" class="second-nav-link">Association</a>
+                  <div class="dropdown">
+                      <ul class="dropdown-first-list">
+                          <li class="dropdown-list-item">
+                              <a href="./histo.html" class="dropdown-list-link">Historique</a>
+                          </li>
+                          <li class="dropdown-list-item">
+                              <a href="./label.html" class="dropdown-list-link">Agréementation</a>
+                          </li>
+                          <li class="dropdown-list-item">
+                              <a href="./bureau.html" class="dropdown-list-link">Composition</a>
+                          </li>
+                          <li class="dropdown-list-item">
+                              <a href="./journal.html" class="dropdown-list-link">Journal</a>
+                          </li>
+                          <li class="dropdown-list-item">
+                              <a href="./reseau.html" class="dropdown-list-link">Associations</a>
+                          </li>
+                          <li class="dropdown-list-item">
+                              <a href="./adhes.html" class="dropdown-list-link">Pour nous rejoindre</a>
+                          </li>
+                      </ul>
+                  </div>
+              </li>
+              <li class="second-nav-item">
+                  <a href="../reboisement.html" class="second-nav-link">Reboisement</a>
+              </li>
+              <li class="second-nav-item">
+                  <a href="#" class="second-nav-link">Education</a>
+                  <div class="dropdown">
+                      <ul class="dropdown-first-list">
+                          <li class="dropdown-list-item">
+                              <a href="../eduquer.html" class="dropdown-list-link">Education à l'environnement</a>
+                          </li>
+                          <li class="dropdown-list-item">
+                              <a href="../realisations-pedagogiques.html" class="dropdown-list-link">Réalisations Pédagogiques</a>
+                          </li>
+                      </ul>
+                  </div>
+              </li>
+              <li class="second-nav-item">
+                  <a href="#" class="second-nav-link">Environement</a>
+                  <div class="dropdown">
+                      <ul class="dropdown-first-list">
+                          <li class="dropdown-list-item">
+                              <a href="../fete_de_la_nature/compte_rendu_entretien.html" class="dropdown-list-link">Compte rendu dernier entretien</a>
+                          </li>
+                          <li class="dropdown-list-item">
+                              <a href="../fete_de_la_nature/fetenat2014.html" class="dropdown-list-link">Fête de la Nature 2014</a>
+                          </li>
+                      </ul>
+                  </div>
+              </li>
+              <li class="second-nav-item">
+                  <a href="#" class="second-nav-link">Partenaires</a>
+                  <div class="dropdown">
+                      <ul class="dropdown-first-list">
+                          <li class="dropdown-list-item">
+                              <a href="../partenairesactuels.html" class="dropdown-list-link">Partenaires Actuels</a>
+                          </li>
+                      </ul>
+                  </div>
+              </li>
+              <li class="second-nav-item">
+                  <a href="#" class="second-nav-link">Entreprises</a>
+              </li>
+              <li class="second-nav-item">
+                  <a href="" class="second-nav-link">Liens</a>
+                  <div class="dropdown">
+                      <ul class="dropdown-first-list">
+                          <li class="dropdown-list-item">
+                              <a href="../liens/region.html" class="dropdown-list-link">Associations régionales</a>
+                          </li>
+                          <li class="dropdown-list-item">
+                              <a href="../liens/national.html" class="dropdown-list-link">Associations nationales</a>
+                          </li>
+                          <li class="dropdown-list-item">
+                              <a href="../liens/autres.html" class="dropdown-list-link">Autres Liens</a>
+                          </li>
+                      </ul>
+                  </div>
+              </li>
+          </ul>
+      </nav>
 
+  <section class="news">
+    <div class=news-heading>
+        <p>
+          L'association est dirigée par un conseil d'administration de 12 membres élus lors des assemblées générales annuelles et de façon  plus régulière par son bureau
+        </p>
+    </div>
+    <h1 class="news-heading2">Composition du bureau de l'association</h1>
+    <div class="activity-cards">
+      <div class="activity-card">
+        <div class="news-paragraph-head">
+          <b><h3>Président : Jean-Pierre MATTALIA</h3>Professeur d'économie - Retraité - jpmattalia@aol.com</b>
+        </div>
+      </div>
+      <div class="activity-card">
+        <div class="news-paragraph-head">
+          <b><h3>Vice-président : Alain JAFFIER</h3>Architecte - Retraité</b>
+        </div>
+      </div>
+      <div class="activity-card">
+        <div class="news-paragraph-head">
+          <b><h3>Trésorier : Jean-Yves RAYNAUD</h3>Notaire - Retraité</b>
+        </div>
+      </div>
+      <div class="activity-card">
+        <div class="news-paragraph-head">
+          <b><h3>Secrétaire : Marina FAURE</h3>Secrétaire - Retraité -marina.faure@yahoo.fr - Tél: 04 42 23 18 54</b>
+        </div>
+      </div>
+    </div>
+    <div class="activity-cards">
+      <h1 class="news-heading2">Consultants:</h1>
+      <div class="activity-card">
+        <div class="news-paragraph-head">
+          <b><h3>Conseiller technique : Morgan Jacquinot</h3>Renseignements sur les reboisements, le choix des espèces d'arbres, projets d'implantation - morgan@hotmail.com</b>
+        </div>
+      </div>
+      <div class="activity-card">
+        <div class="news-paragraph-head">
+          <b><h3>Conseiller technique : Alain Jaffier</h3>Conseils en botanique méditerranéenne - jaffier.architectures@orange.fr</b>
+        </div>
+      </div>   
+      <div class="activity-card">
+        <div class="news-paragraph-head">
+          <b><h3>Conseiller reboisement : Michel Thinon</h3>Conseiller technique spécialiste, conférencier sur la forêt méditerranéenne - michel.thinon@orange.fr </b>
+        </div>
+      </div>  
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    </div>
+  </section>
 </body>
 </html>
