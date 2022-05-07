@@ -1,28 +1,196 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-   <meta name="Author" content="ARPCV">
-   <meta name="Description" content="reseau de l'association">
-   <title>reseau</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Description" content="Reseau de l'association">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="KeyWords" content="ARPCV">
+  <link rel="shortcut icon" type="image/png" href="../images/logo.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="../page.css">
+  <title>Adhésion à l'ARPCV</title>
 </head>
-<body text="#000000" bgcolor="#ACA09B" link="#000099" vlink="#000099" alink="#000099">
-<p align="center"><b>
 
-<font size=+2>&nbsp;<i><font color="#CFFA6B" face="Century Gothic">Associations
-et organismes collaborant avec l'ARPCV:</font></i></font><font face="Century Gothic" color="#CFFA6B">
-<br>&nbsp;</font></b></p>
-<p><i><font size=+1 color="#CFFA6B" face="Century Gothic">L'ARPCV fait partie:</font></i><font face="Century Gothic" color="#CFFA6B"> </font>
-<p><font size=+1 face="Century Gothic"><font color="#CFFA6B">
+<body>
+  <!-- modal box -->
+  <input type="checkbox" id="show-hide-forms" hidden>
+  <div class="forms-wrapper">
+    <label for="show-hide-forms" class="x-btn">&#10005;</label>
+    <input type="checkbox" id="show-form" hidden>
+    <div class="show-btns-wrapper">
+      <label for="show-form" class="show-form-btn show-signup-form">S'inscrire</label>
+      <label for="show-form" class="show-form-btn show-login-form">S'identifier</label>
+    </div>
 
-<ul>
-<li>du réseau d'éducation à l'environnement GRAINE PACA</li>
-<li>du CPIE du Pays d'Aix</li>
-</ul>
-<br>
-<br>
-<div align=right><a href="assoc.html">
-  <img border="0" src="images/top.gif" width="37" height="37"></a></div>
+    <form class="signup-form">
+      <h3 class="form-heading">S'enregistrer</h3>
+      <div class="fullname-inputs-wrapper">
+        <input type="text" placeholder="Prénom">
+        <input type="text" placeholder="Nom de famille">
+      </div>
+      <input type="text" class="form-input" placeholder="Nom">
+      <input type="email" class="form-input" placeholder="Adresse E-Mail">
+      <input type="password" class="form-input" placeholder="Mot de passe">
+      <input type="submit" value="SIGN UP" class="form-btn">
+    </form>
 
+    <form class="login-form">
+      <h3 class="form-heading">S'authentifier</h3>
+      <input type="email" class="form-input" placeholder="Adress e-mail">
+      <input type="password" class="form-input" placeholder="Mot de passe">
+      <input type="submit" value="LOG IN" class="form-btn">
+    </form>
+  </div>
+  <!-- end of modal box -->
+
+  <div class="container">
+    <!-- navbar -->
+    <div class="assoc-logo">
+      <a href="../index.html"><img src="../images/logo.jpg " width="82" height="82"></a>
+    </div>
+    <div class="assoc-header">
+      <h1>Association pour le Reboisement et la Protection du Cengle Sainte-Victoire à Aix-en-Provence, France</h1>
+      <h1>ARPCV</h1>
+    </div>
+    <div class="assoc-contact">
+      <h3>
+        Informations au 04 42 23 18 54
+      </h3>
+    </div>
+
+    <nav class="first-nav">
+      <ul class="first-nav-list">
+        <li class="first-nav-item">
+          <a href="#" class="first-nav-link"><label for="show-hide-forms"><i class="fas fa-heart"></i>Devenir
+              Membre</label></a>
+        </li>
+        <li class="first-nav-item">
+      </ul>
+    </nav>
+
+    <nav class="second-nav">
+      <ul class="second-nav-list">
+        <li class="second-nav-item">
+          <a href="#" class="second-nav-link">Association</a>
+          <div class="dropdown">
+            <ul class="dropdown-first-list">
+              <li class="dropdown-list-item">
+                <a href="./histo.html" class="dropdown-list-link">Historique</a>
+              </li>
+              <li class="dropdown-list-item">
+                <a href="./label.html" class="dropdown-list-link">Agrémentation</a>
+              </li>
+              <li class="dropdown-list-item">
+                <a href="./bureau.html" class="dropdown-list-link">Composition</a>
+              </li>
+              <li class="dropdown-list-item">
+                <a href="./journal.html" class="dropdown-list-link">Journal</a>
+              </li>
+              <li class="dropdown-list-item">
+                <a href="./reseau.html" class="dropdown-list-link">Associations</a>
+              </li>
+              <li class="dropdown-list-item">
+                <a href="./adhes.html" class="dropdown-list-link">Pour nous rejoindre</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="second-nav-item">
+          <a href="../old/reboisement.html" class="second-nav-link">Reboisement</a>
+        </li>
+        <li class="second-nav-item">
+          <a href="#" class="second-nav-link">Education</a>
+          <div class="dropdown">
+            <ul class="dropdown-first-list">
+              <li class="dropdown-list-item">
+                <a href="../old/eduquer.html" class="dropdown-list-link">Education à l'environnement</a>
+              </li>
+              <li class="dropdown-list-item">
+                <a href="../old/realisations-pedagogiques.html" class="dropdown-list-link">Réalisations Pédagogiques</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="second-nav-item">
+          <a href="#" class="second-nav-link">Environement</a>
+          <div class="dropdown">
+            <ul class="dropdown-first-list">
+              <li class="dropdown-list-item">
+                <a href="../old/fete_de_la_nature/compte_rendu_entretien.html" class="dropdown-list-link">Compte rendu
+                  dernier entretien</a>
+              </li>
+              <li class="dropdown-list-item">
+                <a href="../old/fete_de_la_nature/fetenat2014.html" class="dropdown-list-link">Fête de la Nature
+                  2014</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="second-nav-item">
+          <a href="#" class="second-nav-link">Partenaires</a>
+          <div class="dropdown">
+            <ul class="dropdown-first-list">
+              <li class="dropdown-list-item">
+                <a href="../old/partenairesactuels.html" class="dropdown-list-link">Partenaires Actuels</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="second-nav-item">
+          <a href="#" class="second-nav-link">Entreprises</a>
+        </li>
+        <li class="second-nav-item">
+          <a href="" class="second-nav-link">Liens</a>
+          <div class="dropdown">
+            <ul class="dropdown-first-list">
+              <li class="dropdown-list-item">
+                <a href="../liens/region.html" class="dropdown-list-link">Associations régionales</a>
+              </li>
+              <li class="dropdown-list-item">
+                <a href="../liens/national.html" class="dropdown-list-link">Associations nationales</a>
+              </li>
+              <li class="dropdown-list-item">
+                <a href="../liens/autres.html" class="dropdown-list-link">Autres Liens</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="news">
+      <h1 class="news-heading">Associations et organismes collaborant avec l'ARPCV</h1>
+      <div class="activity-cards">
+        <div class="activity-card">
+          <div class="news-paragraph-head">
+            <b>
+              <p>L'ARPCV fait partie:</p>
+            </b>
+          </div>
+        </div>
+        <div class="activity-card">
+          <div class="news-paragraph-head">
+            <b>
+              <p>  du réseau d'éducation à l'environnement GRAINE PACA</p>
+              <p>  du CPIE du Pays d'Aix</p>
+            </b>
+            <br />
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <blockquote>
+        <div ALIGN=right>
+          <a href="../index.html"><img border="0" src="../old/images/back2.gif" width="75" height="75"></a>
+        </div>
+      </blockquote>
+    </section>
+  </div>
 </body>
+
 </html>
+ 
