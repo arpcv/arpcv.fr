@@ -13,6 +13,35 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
     integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link rel="stylesheet" href="../page.css">
+  <style>
+    .image-gallery {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+    .image-item {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .image-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 8px;
+    }
+    .image-caption {
+      font-weight: bold;
+      margin: 0;
+      color: #333;
+      font-size: 14px;
+    }
+  </style>
   <title>Reboisement à Sainte Victoire</title>
 </head>
 
@@ -100,17 +129,25 @@
             <ul class="dropdown-first-list">
               <li class="dropdown-list-item">
                 <a href="../old/partenairesactuels.html" class="dropdown-list-link">Partenaires Actuels</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="second-nav-item">
-          <a href="../entreprises.html" class="second-nav-link">Entreprises</a>
-        </li>
-        <li class="second-nav-item">
-          <a href="" class="second-nav-link">Liens</a>
-          <div class="dropdown">
-            <ul class="dropdown-first-list">
+        <div class="news-paragraph">
+        <div class="image-gallery">
+            <div class="image-item">
+                <img src="../old/images/planta2001droit_red.jpg" width="200" height="150" alt="Plantation au début">
+                <p class="image-caption">Au début</p>
+            </div>
+            <div class="image-item">
+                <img src="../old/images/carteplanta_red.jpg" width="120" height="175" alt="Plantation 1ère année">
+                <p class="image-caption">1ère année</p>
+            </div>
+            <div class="image-item">
+                <img src="../old/images/frene_ref.jpg" width="135" height="180" alt="Plantation 3ème année">
+                <p class="image-caption">3ème année</p>
+            </div>
+            <div class="image-item">
+                <img src="../old/images/frene2_2005_red.JPG" width="221" height="147" alt="Plantation 10ème année">
+                <p class="image-caption">10ème année</p>
+            </div>
+        </div>
               <li class="dropdown-list-item">
                 <a href="../liens/region.html" class="dropdown-list-link">Associations régionales</a>
               </li>
